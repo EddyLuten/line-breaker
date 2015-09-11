@@ -1,10 +1,17 @@
 {
   "name": "line-breaker",
   "main": "./lib/line-breaker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Breaks lines on the preferred line length boundary.",
   "keywords": [
-    "line", "lines", "break", "breaks", "breaker", "length", "text", "selection"
+    "line",
+    "lines",
+    "break",
+    "breaks",
+    "breaker",
+    "length",
+    "text",
+    "selection"
   ],
   "activationCommands": {
     "atom-workspace": "line-breaker:break"
