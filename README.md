@@ -1,5 +1,7 @@
 # Line-Breaker Package
 
+[![Build Status](https://travis-ci.org/EddyLuten/line-breaker.svg?branch=master)](https://travis-ci.org/EddyLuten/line-breaker)
+
 An [Atom](http://atom.io/) plugin that breaks long lines of text.
 
 Keybindings:
