@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Line-Breaker: Break Lines'
+      'command': 'line-breaker:break'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Line-Breaker'
+      'submenu': [
+        {
+          'label': 'Break Lines'
+          'command': 'line-breaker:break'
+        }
+      ]
+    ]
+  }
+]

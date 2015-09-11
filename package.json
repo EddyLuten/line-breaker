@@ -1,0 +1,19 @@
+{
+  "name": "line-breaker",
+  "main": "./lib/line-breaker",
+  "version": "0.1.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "line-breaker:break"
+  },
+  "repository": "https://github.com/EddyLuten/line-breaker",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "text-buffer": "^6.0.0"
+  }
+}
