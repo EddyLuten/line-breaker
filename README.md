@@ -1,8 +1,11 @@
 # Line-Breaker Package
 
 [![Build Status](https://travis-ci.org/EddyLuten/line-breaker.svg?branch=master)](https://travis-ci.org/EddyLuten/line-breaker)
+[![Plugin installs!](https://img.shields.io/apm/dm/line-breaker.svg?style=flat-square)](https://atom.io/packages/line-breaker)
+[![Package version!](https://img.shields.io/apm/v/line-breaker.svg?style=flat-square)](https://atom.io/packages/line-breaker)
+[![Dependencies!](https://img.shields.io/david/EddyLuten/line-breaker.svg?style=flat-square)](https://david-dm.org/EddyLuten/line-breaker)
 
-An [Atom](http://atom.io/) plugin that breaks long lines of text.
+An [Atom](http://atom.io/) package that breaks long lines of text.
 
 Keybindings:
 * `alt-cmd-enter` breaks the selected lines or the current line.
@@ -17,3 +20,4 @@ Works well with contiguous selections of text or long single lines of text.
 **TODO**
 * Add unit tests
 * Maybe allow for newlines to be preserved in the text? Not sure.
+* Support breaking comments nicely.
