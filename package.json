@@ -1,7 +1,7 @@
 {
   "name": "line-breaker",
   "main": "./lib/line-breaker",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Breaks lines on the preferred line length boundary.",
   "keywords": [
     "line",
