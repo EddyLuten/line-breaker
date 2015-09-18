@@ -15,9 +15,10 @@ of the first line in place.
 
 ![Screenshot](https://raw.githubusercontent.com/EddyLuten/line-breaker/master/screenshot.gif)
 
-Works well with contiguous selections of text or long single lines of text.
+Works well with contiguous selections of text or long single lines of text and with Atom-supported comments:
+
+![Screenshot](https://raw.githubusercontent.com/EddyLuten/line-breaker/master/comments.gif)
 
 **TODO**
 * Add unit tests
-* Maybe allow for newlines to be preserved in the text? Not sure.
-* Support breaking comments nicely.
+* Support block comments, once Atom does as well.
