@@ -6,7 +6,7 @@ module.exports =
 
   break: ->
     @editor = atom.workspace.getActiveTextEditor()
-    @maxLineLength = atom.config.settings.editor.preferredLineLength || 80
+    @maxLineLength = atom.config.get('editor.preferredLineLength') || 80
 
     # get the current selection
     selection = @editor.getSelectedBufferRange()
