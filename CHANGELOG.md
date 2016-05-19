@@ -1,3 +1,9 @@
+## 0.3.3 - Windows and Linux Compatibility
+* Key mappings now compatible with Windows and Linux
+* Removed Windows install-breaking text-buffer dependency
+* Added `test.txt` which is shown in the animated screenshot containing an
+  excerpt from The Picture of Dorian Grey
+
 ## 0.3.2 - Another Compatibility Hotfix
 * Now compatible with text-buffer 9.x
 

@@ -1,16 +1,18 @@
 # Dev Notes
 
-Sorry, folks, I keep forgetting the process since I don't do this very often.
+Sorry, folks, I keep forgetting the process since I don't release Atom packages
+very often.
 
 ## Developing
 
 ```bash
 apm develop line-breaker
+cd /path/to/line-breaker
 apm install
-atom -d
+atom -d .
 ```
 
-`atom -d` opens up an instance of Atom with the package loaded in dev mode.
+`atom -d .` opens up an instance of Atom with the package loaded in dev mode.
 
 ## Publishing
 

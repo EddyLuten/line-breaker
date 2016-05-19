@@ -8,7 +8,9 @@
 An [Atom](http://atom.io/) package that breaks long lines of text.
 
 Keybindings:
-* `alt-cmd-enter` breaks the selected lines or the current line.
+* Break the selected lines or the current line:
+  * `alt-cmd-enter` on OS X
+  * `alt-ctrl-enter` on Windows and Linux:
 
 Breaks long lines on the preferred line length boundaries while keeping the
 indentation of the first line in place.
@@ -19,6 +21,8 @@ Works well with contiguous selections of text or long single lines of text and
 with Atom-supported comments:
 
 ![Screenshot](https://raw.githubusercontent.com/EddyLuten/line-breaker/master/comments.gif)
+
+See [CHANGELOG.md](CHANGELOG.md) for what has changed between patches.
 
 **TODO**
 * Add unit tests
