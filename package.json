@@ -22,6 +22,5 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "text-buffer": "^9.0.0"
   }
 }

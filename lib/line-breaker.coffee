@@ -1,4 +1,4 @@
-{Point, Range} = TextBuffer = require 'text-buffer'
+{Point, Range} = require 'atom'
 
 module.exports =
   activate: (state) ->
