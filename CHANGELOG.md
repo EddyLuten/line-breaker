@@ -1,3 +1,6 @@
+## 0.3.2 - Another Compatibility Hotfix
+* Now compatible with text-buffer 9.x
+
 ## 0.3.1 - Compatibility Hotfix
 * Now compatible with the newer `atom.config.get/set` methods
 
