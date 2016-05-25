@@ -34,7 +34,7 @@ module.exports =
         checkpoint = @editor.createCheckpoint()
 
         beforeUncomment = @getCurrentLines(selection)[0].length
-        @togleComments(selection.start.row, selection.end.row)
+        @toggleComments(selection.start.row, selection.end.row)
         afterUncomment = @getCurrentLines(selection)[0].length
 
         # If the uncommenting added text or didn't change the line, it means
@@ -52,7 +52,7 @@ module.exports =
 
       # Replace the selection with the new text
       newRange = @editor.setTextInBufferRange(selection, newLines)
-      @togleComments(newRange.start.row, newRange.end.row) if isComments
+      @toggleComments(newRange.start.row, newRange.end.row) if isComments
 
   # Get the lines in the selection and split them into an array
   getCurrentLines: (selection) ->
@@ -63,11 +63,30 @@ module.exports =
 
   rebuildLines: (indentation, lines) ->
     # Trim the line of any whitespace, and break it all down into words
-    words = lines.map( (line) -> line.trim() ).join(' ').split(' ')
-
     newLines = []
+
+    # TODO: make this a config flag or separate key bind.
+    if true
+      words = lines.map( (line) -> line.trim() ).join(' ').split(' ')
+      sentence_gen = generateSentence(words, indentation)
+
+      loop
+        next_sentence = sentence_gen.next()
+        break if sentence_gen.done
+        newLines.push(next_sentence)
+
+    newLines.join("\n")
+
+  # Sentence generator from words and indentation.
+  generateSentence: (words, indentation) ->
     currentLine = indentation
+
     for word in words
+      if word.length == 0
+        yield currentLine + "\n"
+        currentLine = indentation
+        continue
+
       if currentLine.length + word.length < @maxLineLength
         currentLine +=
           if currentLine.length == indentation.length
@@ -75,12 +94,11 @@ module.exports =
           else
             ' ' + word
       else
-        newLines.push(currentLine)
+        yield currentLine
         currentLine = indentation + word
 
-    # if anything is left in the buffer, push it onto the new array
-    newLines.push(currentLine) if currentLine.length > 0
-    newLines.join("\n")
+    # if anything is left in the buffer, yield it.
+    yield currentLine if currentLine.length > 0
 
-  togleComments: (start, end) ->
+  toggleComments: (start, end) ->
     @editor.languageMode.toggleLineCommentsForBufferRows(start, end)
