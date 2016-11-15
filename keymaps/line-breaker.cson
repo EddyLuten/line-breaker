@@ -1,5 +1,7 @@
 '.platform-darwin atom-workspace':
   'alt-cmd-enter': 'line-breaker:break'
+  'alt-cmd-shift-enter': 'line-breaker:break-no-indent'
 
 '.platform-win32 atom-workspace, .platform-linux atom-workspace':
   'alt-ctrl-enter': 'line-breaker:break'
+  'alt-ctrl-shift-enter': 'line-breaker:break-no-indent'
