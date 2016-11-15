@@ -16,7 +16,8 @@ atom -d .
 
 ## Publishing
 
-Don't update the version number in `package.json`, but update `CHANGELOG.md`
+Don't update the version number in `package.json`, but update the changelog in
+README.md.
 
 Git add / commit, then:
 
