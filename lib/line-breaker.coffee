@@ -24,7 +24,8 @@ module.exports =
 
     # Is every single line in the selection a comment?
     isComments = [selection.start.row..selection.end.row].every (row) =>
-      @editor.languageMode.isLineCommentedAtBufferRow(row)
+      return false unless 0 <= row <= @editor.getLastBufferRow()
+      @editor.tokenizedBuffer.tokenizedLines[row]?.isComment()
 
     # Begin the mutation, make sure it's undoable in a single step
     @editor.transact =>
