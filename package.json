@@ -23,7 +23,7 @@
       "line-breaker:break-no-indent"
     ]
   },
-  "repository": "https://github.com/EddyLuten/line-breaker",
+  "repository": "git@github.com:EddyLuten/line-breaker.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.12.0 <2.0.0"
