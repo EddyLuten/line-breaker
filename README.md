@@ -38,6 +38,9 @@ Building a paragraph from incongruous lines:
 
 ## Changelog
 
+### 0.4.1 - Bug Fix
+* Fixes a breaking bug when breaking lines (issue #5)
+
 ### 0.4.0 - Paragraph Support
 * Now retains paragraphs when multiple are selected
 * New binding to break and ignore the indentation level `alt-cmd-shift-enter`
