@@ -5,6 +5,8 @@
 [![Package version!](https://img.shields.io/apm/v/line-breaker.svg?style=flat-square)](https://atom.io/packages/line-breaker)
 [![Dependencies!](https://img.shields.io/david/EddyLuten/line-breaker.svg?style=flat-square)](https://david-dm.org/EddyLuten/line-breaker)
 
+**NOTICE:** Since I no longer use Atom as my daily editor, I no longer actively maintain or add features to line-breaker. However, if you submit a Pull Request, I will merge them.
+
 An [Atom](http://atom.io/) package for breaking long lines of text at the
 preferred line length boundary. Able to handle entire documents, commented code,
 and indented text. See the screenshots below for some examples.
